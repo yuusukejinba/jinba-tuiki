@@ -4,8 +4,8 @@
 
 ##　環境構築  
 
-・リポジトリの設定　　
-コマンドラインにて　　
+・リポジトリの設定  
+コマンドラインにて  
 git clone git clone git@github.com:yuusukejinba/jinba-tuiki.git  
 
 ・Docker の設定  
