@@ -2,7 +2,8 @@
 確認テスト：お問合せフォーム
 
 
-##　環境構築
+##　環境構築  
+
 ・リポジトリの設定　　
 コマンドラインにて　　
 git clone git clone git@github.com:yuusukejinba/jinba-tuiki.git  
