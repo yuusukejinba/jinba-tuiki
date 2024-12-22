@@ -13,7 +13,7 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/product', [ProductController::class, 'index']);
+Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/register', [ProductController::class, 'register']);
 Route::post('/register', [ProductController::class, 'register']);

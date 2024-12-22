@@ -47,6 +47,17 @@ class ProductsTableSeeder extends Seeder
         DB::table('products')->insert($param);
 
         $param = [
+            'name' => 'ピーチ',
+            'price' => 1000,
+            'image' => '',
+            'description' => '豊潤な香りととろけるような甘さが魅力のピーチ。
+            美味しさはもちろん見た目の可愛さも抜群の商品です。
+            ビタミンEが豊富なため、生活習慣病の予防にもおすすめです。
+            もぎたてフルーツのスムージーをお召し上がりください！'
+        ];
+        DB::table('products')->insert($param);
+        
+        $param = [
             'name' => 'シャインマスカット',
             'price' => 1400,
             'image' => '',

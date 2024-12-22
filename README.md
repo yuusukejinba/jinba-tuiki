@@ -1,5 +1,5 @@
 ## アプリケーション名
-確認テスト：お問合せフォーム
+確認テスト：もぎたて
 
 
 ## 環境構築  
@@ -26,6 +26,12 @@ php artisan migrate
 ・シーディングの実行  
 php artisan db:seed
 
+・アプリケーションの実行  
+php artisan key:generate  
+
+http://localhostにアクセスして
+"The stream or file could not be opened"というエラーが発生した場合は
+ファイルの権限を変更して対応お願いします  
 
 ## 使用技術(実行環境)  
 ・PHP8.3.0  
@@ -38,5 +44,5 @@ php artisan db:seed
 
 ## URL  
 開発環境  
-登録画面 http://localhost/register  
-商品一覧 http://localhost/product  
+登録画面 http://localhost//products/register  
+商品一覧 http://localhost/products  
