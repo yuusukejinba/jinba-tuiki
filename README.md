@@ -37,6 +37,6 @@ php artisan db:seed
 ![ER図](ER.drawio.png)
 
 ## URL  
-開発環境 http://localhost/register  
-        http://localhost/product  
-        
+開発環境  
+登録画面 http://localhost/register  
+商品一覧 http://localhost/product  
