@@ -24,7 +24,7 @@
                     <h2>商品登録</h2>
                 </div>
             </div>
-        <form class="form" action="/register" method="post" >
+        <form class="form" action="/products/register" method="post" >
          @csrf 
             <div class="register-name__content">
                 <div class="register-name__inner">
@@ -79,6 +79,7 @@
                         </label>
                     </div>
                 </div>
+                    <button type="submit">登録</button>                     
             </div>
         </form>        
         </div>
