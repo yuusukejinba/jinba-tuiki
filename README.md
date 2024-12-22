@@ -44,5 +44,5 @@ http://localhostにアクセスして
 
 ## URL  
 開発環境  
-登録画面 http://localhost//products/register  
+登録画面 http://localhost/products/register  
 商品一覧 http://localhost/products  
