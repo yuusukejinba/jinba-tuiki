@@ -17,4 +17,8 @@ Route::get('/products', [ProductController::class, 'index']);
 
 Route::get('/products/register', [ProductController::class, 'register']);
 Route::post('/products/register', [ProductController::class, 'register']);
+Route::post('/products', [ProductController::class, 'create']);
+Route::post('/products/search', [ProductController::class, 'search']);
 
+Route::post('/products/{:productId}/update', [ProductController::class, 'update']);
+Route::post('/products/{:productId}/delete', [ProductController::class, 'delete']);

@@ -26,24 +26,27 @@
         </label>
         
       </div>
-      <form class="form" action="/product" method="post" >
+      <form class="form" action="/products/search" method="post" >
       @csrf
           <div class="form__group">        
               <div class="form__group-list">           
                   <input type="text" name="form__list-search" placeholder="商品名で検索" /></input>
               </div>
-              <div>
+
+              <div class="form__group-list">
                   <input type="submit" name="form__search__btn" value="検索"/></input>
               </div>
+
               <div class="form__group-list">
                   <div class="form__group-display">
                     <h3>価格順で表示</h3>
                   </div>
+              </div>
+
               <div class="form__group-list" >
                   <select class="form__group-select" name="select" id="id" >
                       <option disabled selected>価格で並べ替え</option>
                   </select>                  
-                  </div>
               </div>
           </div>
       </form>
