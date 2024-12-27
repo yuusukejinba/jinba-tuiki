@@ -26,8 +26,9 @@
         </label>
         
       </div>
-      <form class="form" action="/products/search" method="post" >
+      <form class="form" action="/products/search" method="post" enctype="multipart/form-data">
       @csrf
+      <img src="{{ '/storage/' . $products['image']}}"/>
           <div class="form__group">        
               <div class="form__group-list">           
                   <input type="text" name="form__list-search" placeholder="商品名で検索" /></input>

@@ -24,7 +24,7 @@
                     <h2>商品登録</h2>
                 </div>
             </div>
-        <form class="form" action="/products" method="post" >        
+        <form class="form" action="/products" method="post" enctype="multipart/form-data">       
          @csrf 
             <div class="register-name__content">
                 <div class="register-name__inner">
@@ -40,7 +40,7 @@
                         @enderror
                     </div>
                     <div class="register-name__text-inputs">
-                        <input class="register-name__input "type="text" name="register-name" id="name" placeholder="商品名を入力"> 
+                        <input class="register-name__input "type="text" name="name" placeholder="商品名を入力"> 
                     </div>
                 </div>
                                 
@@ -57,7 +57,7 @@
                         @enderror
                     </div>
                     <div class="register-name__text-inputs">
-                        <input class="register-name__input "type="integer" name="price" id="price" placeholder="値段を入力"> 
+                        <input class="register-name__input "type="number" name="price" id="price" placeholder="値段を入力"> 
                     </div>
                 </div>    
 
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="register-name__text-inputs">
-                        <input type="image" name="image" value="ファイルを選択">
+                         <input type="file" name="image">
                     </div>
                 </div>
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Product;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\RegisterRequest;
@@ -26,8 +27,8 @@ class ProductController extends Controller
 
       $products = $request->all();      
       Product::create($products);
-      
-      return view('products' , ['products' => $products]);
+      $path = \Storage::put('/public', $image);
+      return redirect('products');
      
    }
 
@@ -36,14 +37,18 @@ class ProductController extends Controller
 
       $products = $request->all();      
 
-      return view('/products' , ['products' => $products]);
+      return view('products' , ['products' => $products]);
      
    }
 
    public function search(Request $request)
-   {
-
-      return view('/search');
+    {
+        $item =  Product::where('name', 'LIKE',"%{$request->input}%")->first();
+        $param = [
+            'input' => $request->input,
+            'item' => $item
+        ];
+        return view('search', $param);
 
    }
 
